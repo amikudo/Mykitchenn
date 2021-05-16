@@ -1,0 +1,96 @@
+body {
+    width: 100vh;
+    height: 100vh;
+  }
+
+#right {
+  position: fixed;
+  background-color: #C6D8CC;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%
+}
+
+.content-width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-img {
+  width: 16em;
+  margin-top: 50px;
+}
+
+.menu{
+  margin-top: 50px;
+  display: flex;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.menu li a {
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu #about a {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  background-color: #ffb600;
+  padding: 8px 15px 5px 15px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.menu #about a:hover {
+  background-color: #418882;
+}
+
+.menu #qa a {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 8px 15px 5px 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: white;
+  margin-right: 5px;
+}
+.menu #qa a:hover {
+  color: #C6D8CC;
+  background-color: white;
+} 
+
+
+
+
+.app {
+  background-color: white;
+  margin-top: 20px;
+  height: 280px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+
+
+.weather {
+  background-color: white;
+  margin-top: 30px;
+  height: 180px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.35);
+}
