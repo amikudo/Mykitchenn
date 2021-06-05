@@ -100,9 +100,24 @@ var app2 = new Vue({
   createRecipe: function(index){
     axios.get('https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=1081707383800108253&categoryId=' + index)
     .then(function(response){
+<<<<<<< HEAD
       for(var x=0; x<4; x++){
       this.recipes.push({title: response.data.result[x].recipeTitle, images: response.data.result[x].foodImageUrl, url: response.data.result[x].recipeUrl})
     }
+=======
+      this.recipes.push({images: response.data.result[0].foodImageUrl})
+      this.recipes.push({url: response.data.result[0].recipeUrl})
+      this.recipes.push({title: response.data.result[0].recipeTitle})
+      this.recipes.push({images: response.data.result[1].foodImageUrl})
+      this.recipes.push({url: response.data.result[1].recipeUrl})
+      this.recipes.push({title: response.data.result[1].recipeTitle})
+      this.recipes.push({images: response.data.result[2].foodImageUrl})
+      this.recipes.push({url:　response.data.result[2].recipeUrl})
+      this.recipes.push({title: response.data.result[2].recipeTitle})
+      this.recipes.push({images: response.data.result[3].foodImageUrl})
+      this.recipes.push({url: response.data.result[3].recipeUrl})
+      this.recipes.push({title: response.data.result[3].recipeTitle})
+>>>>>>> origin/master
       // console.log(response)
     }.bind(this))
     .catch(function(error){
@@ -112,3 +127,34 @@ var app2 = new Vue({
 }
 })
 
+<<<<<<< HEAD
+=======
+
+
+// var app3 = new Vue({
+//     el: '#weather',
+//     data: {
+//       city: null,
+//       temp: null,
+//       condition: {
+//       main: null
+//       }
+//     },
+//     mounted: function(){
+//       axios.get('https://api.openweathermap.org/data/2.5/weather?q=Tokyo,jp&units=metric&appid=f3b18c03f19e675e32c44b6b0af50e64')
+//       .then(function(response){
+//         this.city = response.data.name
+//         this.temp = response.data.main.temp
+//         this.condition = response.data.weather[0]
+//       }.bind(this))
+//       .catch(function(error){
+//         console.log(error)
+//       })
+//     },
+//     filters: {
+//       roundUp(value){
+//         return Math.ceil(value)
+//       }
+//     }
+// })
+>>>>>>> origin/master
