@@ -12,21 +12,15 @@
     <script src="js/pace.js"></script>
     <link rel="icon" type="image/svg" href="img/icon.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<<<<<<< HEAD
     <link
         href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@300;400;900&family=Shippori+Mincho&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-=======
-    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@300;400;900&family=Shippori+Mincho&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
->>>>>>> origin/master
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-<<<<<<< HEAD
     <div id="global-container">
         <div class="header">
             <div class="header__inner content-width2">
@@ -61,60 +55,9 @@
             </div>
         </div>
 
-=======
-<div id="global-container">
-    <div class="header">
-        <div class="header__inner content-width2">
-            <img src="img/mykitchen8.svg" alt="" class="logo-img">
-            <ul class="menu">
-                <li id="qa"><a href="#">Q&A</a></li>
-                <li id="about"><a href="#">About</a></li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="left">
-        <div id="app" class="app">
-            <div class="top"></div>
-            <div class="app__inner">
-                <form v-on:submit.prevent class="app_form">
-                    <div class="rezoko">材料登録</div>
-                    <input type="text" placeholder="食材を入力" v-model="newItem">
-                    <button v-on:click="addItem">Add</button>
-                </form>
-
-                <ul>
-                    <li v-for="(food, index) in foods">
-                        <span　class="items">{{ food.item }}</span>
-                        <button v-on:click="deleteItem(index)" class='delete'>×</button>
-                    </li>
-                </ul>
-                <!-- <pre>{{ $data }}</pre> -->
-            </div>
-            <div class="bottom"></div>
-        </div>
-
-    
-
-<!-- 
-<div id="weather" class="weather">
-<div class="weather__inner">
-    <span class="weather_s">{{ city }}</span> /
-    <span class="weather_s">{{ temp | roundUp }}&deg;C</span> /
-    <span v-if="condition.main == 'Rain'">Rain ☔️</span>
-    <span v-else-if="condition.main == 'Mist'">Mist 🌧</span>
-    <span v-else-if="condition.main == 'Clouds'">Clouds 🌥</span>
-    <span v-else-if="condition.main == 'Clear'">Clear 🌞</span>
-    <span v-else-if="condition.main == 'Sunset'">Sunset 🌞</span>
-    <span v-else>{{ condition.main }}</span>
-</div>
-</div> -->
->>>>>>> origin/master
 
         <div class="right">
 
-<<<<<<< HEAD
             <div id="api">
                 <div class="right__inner">
                     <div v-if='show == true' class="right-text">
@@ -149,6 +92,7 @@
                         <br>
                         <br>
                     </li>
+                    
                     <!-- Rakuten Web Services Attribution Snippet FROM HERE -->
                     <a href="https://webservice.rakuten.co.jp/" target="_blank"><img
                             src="https://webservice.rakuten.co.jp/img/credit/200709/credit_22121.gif"
@@ -175,56 +119,6 @@
 
 
     </div>
-=======
-
-    </div>
-
-
-    <div class="right">
-
-<div id="api">
-    <div class="right__inner">
-    <div v-if='show == true' class="right-text">
-        <h2>OUR VISION</h2>
-        <h3 class="sub-t">テクノロジーのちからで料理を楽しく</h3>
-        <div class="line-t"></div>
-        <p class="in-t">冷蔵庫にあるもので何か作りたいけれど、料理を考えるのが面倒<br>
-        そんな悩みを解決します。<br>
-        テクノロジーのちからで料理をもっと身近に、手軽に。<br>
-        そんな願いを込めて開発しました。<br>
-        まずは、画面左から材料を登録してください。</p>
-        <form v-on:submit.prevent class="app_form_2">
-            <button v-on:click="fnc"　class='fnc'>レシピを表示する</button>
-        </form>
-    </div>
-
-    <div v-if="show_after == true" class='after'>
-        <h3>おすすめレシピカテゴリ一覧</h3>
-    <div v-for="(ab, index) in abc"><button v-on:click="create(index)" class="ab">{{ ab }}</button></div>
-    </div>
-</div>
-    
-    <div v-if="show_show == true" class ="show_show">
-        <div v-for="recipe in recipes">
-        <img v-bind:src='recipe.images' class="recipe-img"/>
-        <!-- <a v-bind:href="recipe.url">{{ recipe.title }}</a> -->
-        </div>  
-    </div>
-
-
-    </div>
-
-</div>
-
-<div class="snses">
-    <span class="sns"><i class="fab fa-twitter-square fa-lg"></i><span class="char">Twitter</span></span>
-    <span class="sns"><i class="fab fa-facebook-square fa-lg"></i><span class="char">Facebook</span></span>
-</div>
-
-
-
-</div>
->>>>>>> origin/master
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
