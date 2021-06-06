@@ -197,19 +197,12 @@ body {
   top: 0;
   position: fixed;
   text-align: center;
-<<<<<<< HEAD
-=======
-  padding-top: 50px;
->>>>>>> origin/master
 }
 
 .right__inner {
   position: absolute;
   width: 65%;
-<<<<<<< HEAD
   padding-top: 50px;
-=======
->>>>>>> origin/master
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -330,17 +323,11 @@ button {
 }
 
 .show_show {
-<<<<<<< HEAD
   padding-top: 50px;
   padding-left: 0px;
-=======
->>>>>>> origin/master
   width:100%;
   height:90vh;
   overflow: scroll;
   padding-bottom: 100px;
-<<<<<<< HEAD
   list-style: none;
-=======
->>>>>>> origin/master
 }
