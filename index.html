@@ -70,14 +70,14 @@
                             そんな願いを込めて開発しました。<br>
                             まずは、画面左から材料を登録してください。</p>
                         <form　v-on:submit.prevent class="app_form_2">
-                            <button　v-on:click="fnc" class='fnc'>レシピ検索<i class="fas fa-arrow-right"></i></button>
+                            <button　v-on:click="fnc" class='fnc'><span class="space">レシピ検索</span><i class="fas fa-arrow-right"></i></button>
                         </form>
                     </div>
 
                     <div v-if="show_after == true" class='after'>
                         <h3>おすすめレシピカテゴリ一覧</h3>
-                        <div v-for="(ab, index) in abc"><button v-on:click="create(index)" class="ab">{{ ab }}</button>
-                        </div>
+                        <form v-on:submit.prevent v-for="(ab, index) in abc"><button v-on:click="create(index)" class="ab">{{ ab }}</button>
+                        </form>
                     </div>
                 </div>
 

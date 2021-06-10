@@ -61,6 +61,7 @@ body {
   border: 1px solid;
   border-color: #f3c11d;
 }
+
 .menu #about a:hover {
   background-color: white;
   color: #f3c11d;
@@ -330,4 +331,8 @@ button {
   overflow: scroll;
   padding-bottom: 100px;
   list-style: none;
+}
+
+.space {
+  padding-right:20px;
 }
