@@ -79,7 +79,7 @@ var app2 = new Vue({
   methods: {
     fnc: function() {
       if(app1.foods == ''){
-        alert('※左画面から材料を登録してください')
+        alert('※材料を登録してください')
         return
       }
         this.show = false
